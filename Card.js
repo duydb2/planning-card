@@ -21,7 +21,7 @@ innerContainer: {
   backgroundColor: 'white'
 },
 text: {
-  fontSize: 250,
+  fontSize: 240,
   fontWeight: 'bold',
 } });
 
