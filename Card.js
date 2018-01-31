@@ -1,14 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { LinearGradient } from 'expo';
 
 const Card = ({ children }) => (
   <View style={styles.container}>
-    <View style={styles.innerContainer}>
+    <LinearGradient colors={['white', 'rgb(208, 226, 228)']} style={styles.innerContainer}>
       <View style={styles.circle}>
         <Text style={styles.circleText}>{children}</Text>
       </View>
       <Text style={styles.text}>{children}</Text>
-    </View>
+    </LinearGradient>
   </View>
 );
 
@@ -26,8 +27,7 @@ innerContainer: {
   justifyContent: 'center',
   borderWidth: 4,
   borderRadius: 16,
-  borderColor: 'rgb(14, 70, 78)',
-  backgroundColor: 'white'
+  borderColor: 'rgb(14, 70, 78)'
 },
 circle: {
   width: 60,
